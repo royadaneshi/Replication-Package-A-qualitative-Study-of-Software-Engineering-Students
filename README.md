@@ -34,41 +34,23 @@ Replication_Package/
 |       │   ├── AUDITED_FA24_Exhaustive_Coded.csv               
 |       │   ├── AUDITED_SP22_Exhaustive_Coded.csv               
 |       │   ├── AUDITED_SP23_Exhaustive_Coded.csv               
-|       │   └── AUDITED_SP24_Exhaustive_Coded.csv      
+|       │   └── AUDITED_SP24_Exhaustive_Coded.csv    
 │
-├── Quantitative/                                       # This folder contains the scripts to conduct statistical tests and plots
-│   ├── chi_square.py
-│   ├── data_prepration.py
-│   ├── logistice_regression.py
-│   ├── main.py
-│   ├── plot.py
-│   └── spearman_rank_order.py
-│
-│
-│── Survey - A Gaming/
-│    ├── Gaming_Survey.pdf                               # Original Canvas survey instrument instrument
-│    └── Student_Responses/
-│        ├── FA/                                         # Original anonymized data (Fall 2022–2025)
-│        │   ├── FA22_Responses.csv
-│        │   ├── FA23_Responses.csv
-│        │   ├── FA24_Responses.csv
-│        │   └── FA25_Responses.csv
-│        └── SP/                                         # Original anonymized data (Spring 2022–2025)
-│            ├── SP22_Responses.csv
-│            ├── SP23_Responses.csv
-│            ├── SP24_Responses.csv
-│            └── SP25_Responses.csv
-│            
-└── cleaned_dataset_for_quantitative_analysis/           # This is the data with only gaming frequency and final score for quantitative analysis
-    ├── FA22_Cleaned_Data.csv
-    ├── FA23_Cleaned_Data.csv
-    ├── FA24_Cleaned_Data.csv
-    ├── FA25_Cleaned_Data.csv
-    ├── SP22_Cleaned_Data.csv
-    ├── SP23_Cleaned_Data.csv
-    ├── SP24_Cleaned_Data.csv
-    ├── SP25_Cleaned_Data.csv
-    └── concatenated_Cleaned_Data.csv
+└── Survey - A Gaming/
+     ├── Gaming_Survey.pdf                               # Original Canvas survey instrument instrument
+     └── Student_Responses/
+         ├── FA/                                         # Original anonymized data (Fall 2022–2025)
+         │   ├── FA22_Responses.csv
+         │   ├── FA23_Responses.csv
+         │   ├── FA24_Responses.csv
+         │   └── FA25_Responses.csv
+         └── SP/                                         # Original anonymized data (Spring 2022–2025)
+             ├── SP22_Responses.csv
+             ├── SP23_Responses.csv
+             ├── SP24_Responses.csv
+             └── SP25_Responses.csv
+             
+
 ```
 
 ## Environment Requirements
