@@ -67,9 +67,6 @@ To ensure the scripts run correctly, please use the following environments:
 - **Data Files:** Anonymized CSV datasets (e.g., ``` FA22_Responses.csv```) containing self‑reported student gaming habits paired with final course grades. All identifiers were removed prior to inclusion.
 - **Survey Instrument:** A PDF copy (```Gaming_Survey.pdf```) of the original Gaming Survey as delivered on Canvas, including all questions and multiple‑choice options exactly as presented to participants.
 
-### Quantitative
-- **Quantitative Analysis Scripts:** Python scripts used for statistical testing (Chi-square, Logistic Regression, and Spearman Rank-Order correlation) and the generation of descriptive visualizations.
-
 ### Qualitative
 - **Qualitative Analysis Scripts:** Python scripts used for thematic code counting, including ```CountCodes.ipnyb``` for thematic counting, ```FrequencyFinding.ipnyb``` to count the number of low‑ and high‑frequency gamers across the manually coded cohorts, and ```GenerateAuditIndexes.ipnyb``` for selecting a random 25% sample of rows for manual verification.
 - **Comprehensive Codebook:** The finalized codebook (```Comprehensive_Codebook.xlsx```) which contains eight primary themes and twenty‑eight sub‑codes, each defined and illustrated with an example quote. These codes capture students’ gaming habits, study behaviors, motivations, time‑management strategies, and perceptions of learning. The codebook represents the final structure developed through iterative refinement and serves as the reference framework for all qualitative analyses reported in the study.
@@ -81,26 +78,6 @@ To ensure the scripts run correctly, please use the following environments:
   - Yellow Highlight: Rows randomly selected for the 25% manual audit.
   - Light Orange Highlight (SP Cohorts Only): Rows originally marked as UNCODED that were not part of the random 25% sample
  
-## Workflow Instructions
-### Quantitative Analysis
-#### Phase 1: Data Preparation and Preprocessing
-- Reference: `Quantitative/data_prepration.py`.
-- Execution: Call `concatenate_data()` only for the initial setup. Subsequently, the `clean_data()` function is called within `main.py` to load and sanitize the longitudinal datasets.
-- Logic: This phase keeps only gaming frequency categories and Final Grade scores from the raw survey responses, which are the primary factors required for the quantitative analysis.
-
-#### Phase 2: Statistical Significance Testing
-- Reference: `chi_square.py`, `spearman_rank_order.py`, and `logistice_regression.py`.
-- Logic: We perform three distinct statistical checks to validate the relationship between gaming frequency and final grade:
-   * Chi-Square Tests: Evaluates the distribution of students across gaming frequencies (both the original 8-category setting and the binary Low vs. High category setting).
-   * Logistic Regression: Models the probability of academic outcomes based on the binary Low vs. High gaming frequency category setting.
-   * Spearman Rank-Order Correlation: Measures the strength and direction of the association between gaming frequency and final grade.
-  
-#### Phase 3: Trend Analysis and Visualization
-- Reference: `plot.py`.
-- Execution: Automated via `main.py` using functions like `plot_mean_score_per_frequency()`, `plot_mean_score_per_frequency_bin()`, `bar_plot_data_bin()`, and `bar_plot_data()`.
-- Logic: Generates descriptive visualizations, including line charts for mean final grade trends and bar plots for frequency distribution.
-- Output: Saves high-resolution figures (e.g., `gaming_freq_distribution.pdf`) used in the final manuscript.
-  
 ### Qualitative Analysis
 #### Phase 1: Manual Coding and Framework Development
 - Reference: Consult the ```/Phase_1_Manual_Coding/``` directory and ```Comprehensive_Codebook.xlsx```.
