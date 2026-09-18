@@ -20,6 +20,6 @@ if __name__ == '__main__':
     combined_df.insert(0, "ID", range(1, len(combined_df) + 1))
 
     # Save the final CSV
-    combined_df.to_csv("SP22_FA25_Combined.csv", index=False)
+    combined_df.to_csv("SP22_FA25_Cleaned_Combined.csv", index=False)
 
-    print(f"Saved {len(combined_df)} rows to SP22_FA25_Combined.csv")
+    print(f"Saved {len(combined_df)} rows to SP22_FA25_Cleaned_Combined.csv")
