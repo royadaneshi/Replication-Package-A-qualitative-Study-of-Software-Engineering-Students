@@ -8,9 +8,7 @@ Replication_Package/
 ├── README.md                                           # Usage instructions and environment requirements
 │
 ├── Qualitative/
-│   ├── Comprehensive_Codebook.xlsx                     # 8 primary themes and 28 sub-codes with definitions
 │   ├── LLM_Automation_Protocol.md                      # Gemini 3 Pro prompts and data cleaning instructions
-│   ├── codebook.pdf                                    # Our codebook, which was used for qualitative coding
 │   ├── Keywords_and_Phrases_Reference_Map.pdf          # Mapping used for LLM deductive coding
 │   ├── Frequency_Analysis_Audited_Final.csv            # Consolidated longitudinal counts across all eight semesters
 │   ├── Qualitative_Analysis_Scripts/
