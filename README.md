@@ -8,10 +8,12 @@ Replication_Package/
 ├── README.md                                           # Usage instructions and environment requirements
 │
 ├── Qualitative/
+|   ├── SP22_FA25_Cleaned_Combined.csv                  # All data from all semesters, with student IDs(anonymized numbers)
 │   ├── LLM_Automation_Protocol.md                      # Gemini 3 Pro prompts and data cleaning instructions
 │   ├── Keywords_and_Phrases_Reference_Map.pdf          # Mapping used for LLM deductive coding
 │   ├── Frequency_Analysis_Audited_Final.csv            # Consolidated longitudinal counts across all eight semesters
 │   ├── Qualitative_Analysis_Scripts/
+│   │   ├── append_data_from_semesters.py               # Appends the data from all semesters and gives each student a number(ID)
 │   │   ├── GenerateAuditIndexes.ipynb                  # Reproduces 25% stratified random sample
 │   │   ├── CountCodes.ipynb                            # Aggregates thematic code totals
 │   │   └── FrequencyFinding.ipynb                      # Calculates number of low- vs. high-frequency rows
